@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedResourceLoader", "EmbeddedResourceLoader\EmbeddedResourceLoader.csproj", "{A303EAFD-4154-4C86-9BC4-003A68649F08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedResourceLoader.Tests", "EmbeddedResourceLoader.Tests\EmbeddedResourceLoader.Tests.csproj", "{DFABEBFA-0A90-4660-A959-6CCC367F1952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A303EAFD-4154-4C86-9BC4-003A68649F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A303EAFD-4154-4C86-9BC4-003A68649F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A303EAFD-4154-4C86-9BC4-003A68649F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A303EAFD-4154-4C86-9BC4-003A68649F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFABEBFA-0A90-4660-A959-6CCC367F1952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFABEBFA-0A90-4660-A959-6CCC367F1952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFABEBFA-0A90-4660-A959-6CCC367F1952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFABEBFA-0A90-4660-A959-6CCC367F1952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
