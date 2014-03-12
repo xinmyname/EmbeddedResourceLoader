@@ -29,19 +29,9 @@ namespace EmbeddedResourceLoader.Tests
         [Test]
         public void WhenILoadTheResourceText()
         {
-            bool itThrowsAnArgumentException = false;
+            var it = new EmbeddedResourceLoader(new AssemblyResourceLocator(_asm));
 
-            try
-            {
-                new EmbeddedResourceLoader(new AssemblyResourceLocator(_asm))
-                    .LoadText(_resourceName);
-            }
-            catch (ArgumentException)
-            {
-                itThrowsAnArgumentException = true;
-            }
-
-            itThrowsAnArgumentException.ShouldBeTrue();
+            it.ShouldThrow<ArgumentException>(() => it.LoadText(_resourceName));
         }
     }
 }

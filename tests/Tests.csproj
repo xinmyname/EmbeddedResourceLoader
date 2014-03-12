@@ -45,10 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GivenAFullyQualifiedMatchingStrategy.cs" />
     <Compile Include="GivenAResourceNameInASubFolderWithADuplicateName.cs" />
     <Compile Include="GivenAResourceNameInTheRootFolder.cs" />
     <Compile Include="GivenAnInvalidResourceName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShouldExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
