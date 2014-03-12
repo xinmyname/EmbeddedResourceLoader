@@ -1,0 +1,9 @@
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>EmbeddedResourceLoader</id>
+    <version>1.0</version>
+    <authors>Andy Sherwood</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Quickly load embedded resources from C# assemblies</description>
+  </metadata>
+</package>
