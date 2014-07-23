@@ -1,4 +1,4 @@
-﻿namespace EmbeddedResourceLoader
+﻿namespace EmbeddedResources
 {
     public interface ILocateResources
     {

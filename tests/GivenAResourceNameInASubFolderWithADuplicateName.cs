@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using Should;
 
-namespace EmbeddedResourceLoader.Tests
+namespace EmbeddedResources.Tests
 {
     [TestFixture]
     public class GivenAResourceNameInASubFolderWithADuplicateName
@@ -22,7 +22,7 @@ namespace EmbeddedResourceLoader.Tests
             var it = new AssemblyResourceLocator(_asm)
                 .Locate(_resourceName);
 
-            it.FullName.ShouldEqual("EmbeddedResourceLoader.Tests.Resources.BadGuy.txt");
+            it.FullName.ShouldEqual("EmbeddedResources.Tests.Resources.BadGuy.txt");
         }
     }
 }

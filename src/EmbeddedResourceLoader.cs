@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace EmbeddedResourceLoader
+namespace EmbeddedResources
 {
     public class EmbeddedResourceLoader : ILoadResources
     {

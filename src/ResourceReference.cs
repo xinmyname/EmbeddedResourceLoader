@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace EmbeddedResourceLoader
+namespace EmbeddedResources
 {
     public class ResourceReference
     {

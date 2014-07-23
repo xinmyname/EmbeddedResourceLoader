@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using Should;
 
-namespace EmbeddedResourceLoader.Tests
+namespace EmbeddedResources.Tests
 {
     [TestFixture]
     public class GivenAResourceNameInTheRootFolder

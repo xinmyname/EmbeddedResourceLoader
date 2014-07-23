@@ -7,8 +7,8 @@
     <ProjectGuid>{DFABEBFA-0A90-4660-A959-6CCC367F1952}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmbeddedResourceLoader.Tests</RootNamespace>
-    <AssemblyName>EmbeddedResourceLoader.Tests</AssemblyName>
+    <RootNamespace>EmbeddedResources.Tests</RootNamespace>
+    <AssemblyName>EmbeddedResources.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -56,12 +56,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\EmbeddedResourceLoader.csproj">
-      <Project>{A303EAFD-4154-4C86-9BC4-003A68649F08}</Project>
-      <Name>EmbeddedResourceLoader</Name>
+    <ProjectReference Include="..\src\EmbeddedResources.csproj">
+      <Project>{a303eafd-4154-4c86-9bc4-003a68649f08}</Project>
+      <Name>EmbeddedResources</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Resources\BadGuy.txt" />
   </ItemGroup>

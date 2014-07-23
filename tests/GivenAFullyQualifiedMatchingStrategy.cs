@@ -3,7 +3,7 @@ using System.Reflection;
 using NUnit.Framework;
 using Should;
 
-namespace EmbeddedResourceLoader.Tests
+namespace EmbeddedResources.Tests
 {
     [TestFixture]
     public class GivenAFullyQualifiedMatchingStrategy
@@ -39,7 +39,7 @@ namespace EmbeddedResourceLoader.Tests
             };
 
             string it = new EmbeddedResourceLoader(locator)
-                .LoadText("EmbeddedResourceLoader.Tests.Resources.Sub.Sub_Sub.BadGuy.txt");
+                .LoadText("EmbeddedResources.Tests.Resources.Sub.Sub_Sub.BadGuy.txt");
 
             it.ShouldEqual("Bad Cop");
         }

@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace EmbeddedResourceLoader.Tests
+namespace EmbeddedResources.Tests
 {
     public static class ShouldExtensions
     {
