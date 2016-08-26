@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GivenAFullyQualifiedMatchingStrategy.cs" />
+    <Compile Include="GivenAResourceLocator.cs" />
     <Compile Include="GivenAResourceNameInASubFolderWithADuplicateName.cs" />
     <Compile Include="GivenAResourceNameInTheRootFolder.cs" />
     <Compile Include="GivenAnInvalidResourceName.cs" />

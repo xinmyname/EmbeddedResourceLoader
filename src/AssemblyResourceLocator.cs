@@ -35,6 +35,23 @@ namespace EmbeddedResources
             return new ResourceReference(_resNames[key], key);
         }
 
+        public IEnumerable<ResourceEntry> EnumerateResourceEntries()
+        {
+            foreach (KeyValuePair<string, Assembly> pair in _resNames)
+            {
+                Assembly asm = pair.Value;
+                AssemblyName asmName = asm.GetName();
+                string asmResourcePrefix = asmName.Name + ".Resources.";
+
+                yield return new ResourceEntry
+                {
+                    ManifestResourceName = pair.Key,
+                    Assembly = asm,
+                    Name = pair.Key.Substring(asmResourcePrefix.Length)
+                };
+            }
+        }
+
         public static bool DefaultMatchingStrategy(string key, string name)
         {
             return key.Contains(name);
