@@ -1,9 +1,12 @@
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>EmbeddedResourceLoader</id>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <authors>Andy Sherwood</authors>
+    <licenseUrl>https://raw.githubusercontent.com/xinmyname/EmbeddedResourceLoader/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/xinmyname/EmbeddedResourceLoader</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Quickly load embedded resources from C# assemblies</description>
+    <copyright>Copyright 2016 Andy Sherwood</copyright>
   </metadata>
 </package>
