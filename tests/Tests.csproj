@@ -50,6 +50,7 @@
     <Compile Include="GivenAResourceNameInASubFolderWithADuplicateName.cs" />
     <Compile Include="GivenAResourceNameInTheRootFolder.cs" />
     <Compile Include="GivenAnInvalidResourceName.cs" />
+    <Compile Include="GivenTheDefaultNameExtractor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShouldExtensions.cs" />
   </ItemGroup>
