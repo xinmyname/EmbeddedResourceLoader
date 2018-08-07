@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
-using NUnit.Framework;
-using Should;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace EmbeddedResources.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class GivenAResourceNameInASubFolderWithADuplicateName
     {
         private readonly Assembly _asm;
@@ -16,7 +16,7 @@ namespace EmbeddedResources.Tests
             _resourceName = "BadGuy.txt";
         }
 
-        [Test]
+        [TestMethod]
         public void WhenILocateTheResource()
         {
             var it = new AssemblyResourceLocator(_asm)

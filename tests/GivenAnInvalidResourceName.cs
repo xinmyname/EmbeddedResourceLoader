@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Reflection;
-using NUnit.Framework;
-using Should;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EmbeddedResources.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class GivenAnInvalidResourceName
     {
         private readonly Assembly _asm;
@@ -17,7 +16,7 @@ namespace EmbeddedResources.Tests
             _resourceName = "SirNotAppearingInThisAssembly.txt";
         }
 
-        [Test]
+        [TestMethod]
         public void WhenILocateTheResource()
         {
             var it = new AssemblyResourceLocator(_asm)
@@ -26,7 +25,7 @@ namespace EmbeddedResources.Tests
             it.ShouldBeNull();
         }
 
-        [Test]
+        [TestMethod]
         public void WhenILoadTheResourceText()
         {
             var it = new EmbeddedResourceLoader(new AssemblyResourceLocator(_asm));

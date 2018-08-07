@@ -4,8 +4,8 @@ namespace EmbeddedResources
 {
     public class ResourceReference
     {
-        public Assembly Assembly { get; private set; }
-        public string FullName { get; private set; }
+        public Assembly Assembly { get; }
+        public string FullName { get; }
 
         public ResourceReference(Assembly assembly, string fullName)
         {

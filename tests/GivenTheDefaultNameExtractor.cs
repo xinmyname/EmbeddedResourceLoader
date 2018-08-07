@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Reflection;
-using NUnit.Framework;
-using Should;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace EmbeddedResources.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class GivenTheDefaultNameExtractor
     {
         private readonly Func<string, Assembly, string> NameExtractor = AssemblyResourceLocator.DefaultNameExtractor;
 
-        [Test]
+        [TestMethod]
         public void WhenTheManifestResourceNameContainsAFullyQualifiedPath()
         {
             string it = NameExtractor("SomeNamespace.SomeAssembly.filename.ext", null);
@@ -18,10 +18,10 @@ namespace EmbeddedResources.Tests
             it.ShouldEqual("filename.ext");
         }
 
-        [Test]
+        [TestMethod]
         public void WhenTheManifestResourceNameContainsJustAFilename()
         {
-            Assert.Throws<ArgumentException>(() =>
+            Assert.ThrowsException<ArgumentException>(() =>
             {
                 NameExtractor("filename.ext", null);
             });

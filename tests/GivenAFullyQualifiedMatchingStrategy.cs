@@ -1,11 +1,10 @@
 using System;
 using System.Reflection;
-using NUnit.Framework;
-using Should;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EmbeddedResources.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class GivenAFullyQualifiedMatchingStrategy
     {
         private readonly Assembly _asm;
@@ -17,7 +16,7 @@ namespace EmbeddedResources.Tests
             _fullyQualifiedMatchingStrategy = (key, name) => key.Equals(name);
         }
 
-        [Test]
+        [TestMethod]
         public void WhenILoadAResourceWithAShortName()
         {
             var locator = new AssemblyResourceLocator(_asm)
@@ -30,7 +29,7 @@ namespace EmbeddedResources.Tests
             it.ShouldThrow<ArgumentException>(() => it.LoadText("BadGuy.txt"));
         }
 
-        [Test]
+        [TestMethod]
         public void WhenILoadAResourceWithAFullyQualifiedName()
         {
             var locator = new AssemblyResourceLocator(_asm)

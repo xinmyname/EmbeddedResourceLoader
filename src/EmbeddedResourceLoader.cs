@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Security.Cryptography;
 
 namespace EmbeddedResources
 {
@@ -20,7 +19,7 @@ namespace EmbeddedResources
             using (var stream = this.OpenStream(name))
             {
                 if (stream == null)
-                    throw new ArgumentException(String.Format("Resource \"{0}\" not found.", name));
+                    throw new ArgumentException($"Resource \"{name}\" not found.", nameof(name));
 
                 var reader = new StreamReader(stream);
                 text = reader.ReadToEnd();
@@ -36,7 +35,7 @@ namespace EmbeddedResources
             using (var resStream = this.OpenStream(name))
             {
                 if (resStream == null)
-                    throw new ArgumentException(String.Format("Resource \"{0}\" not found.", name));
+                    throw new ArgumentException($"Resource \"{name}\" not found.", nameof(name));
 
                 resStream.CopyTo(memStream);
             }
@@ -49,12 +48,12 @@ namespace EmbeddedResources
             ResourceReference resourceReference = _resourceLocator.Locate(name);
 
             if (resourceReference == null)
-                throw new ArgumentException(String.Format("Resource \"{0}\" not found.", name));
+                throw new ArgumentException($"Resource \"{name}\" not found.", nameof(name));
 
             var stream = resourceReference.Assembly.GetManifestResourceStream(resourceReference.FullName);
 
             if (stream == null)
-                throw new ArgumentException(String.Format("Resource \"{0}\" not found.", name));
+                throw new ArgumentException($"Resource \"{name}\" not found.", nameof(name));
 
             return stream;
         }
