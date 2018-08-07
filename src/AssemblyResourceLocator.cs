@@ -31,10 +31,7 @@ namespace EmbeddedResources
             string key = _resNames.Keys
                 .FirstOrDefault(k => MatchingStrategy(k, name));
 
-            if (key == null)
-                return null;
-
-            return new ResourceReference(_resNames[key], key);
+            return key == null ? null : new ResourceReference(_resNames[key], key);
         }
 
         public IEnumerable<ResourceEntry> EnumerateResourceEntries()

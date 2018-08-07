@@ -1,11 +1,11 @@
 ﻿using System.CodeDom;
 using System.Reflection;
-using NUnit.Framework;
-using Should;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace EmbeddedResources.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class GivenAResourceNameInTheRootFolder
     {
         private readonly Assembly _asm;
@@ -17,7 +17,7 @@ namespace EmbeddedResources.Tests
             _resourceName = "NotADJ.txt";
         }
 
-        [Test]
+        [TestMethod]
         public void WhenILocateTheResource()
         {
             var it = new AssemblyResourceLocator(_asm)
@@ -26,7 +26,7 @@ namespace EmbeddedResources.Tests
             it.ShouldBeType<ResourceReference>();
         }
 
-        [Test]
+        [TestMethod]
         public void WhenILoadTheTextForTheResource()
         {
             var it = new EmbeddedResourceLoader(new AssemblyResourceLocator(_asm))

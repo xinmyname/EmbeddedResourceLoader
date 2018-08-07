@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NUnit.Framework;
-using Should;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace EmbeddedResources.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class GivenAResourceLocator
     {
         private readonly ILocateResources _resLocator;
@@ -15,7 +15,7 @@ namespace EmbeddedResources.Tests
             _resLocator = new AssemblyResourceLocator(GetType().Assembly);
         }
 
-        [Test]
+        [TestMethod]
         public void WhenResourcesAreEnumerated()
         {
             IList<ResourceEntry> it = _resLocator
