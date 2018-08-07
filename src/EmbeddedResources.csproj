@@ -12,6 +12,7 @@
     <PackageProjectUrl>https://github.com/xinmyname/EmbeddedResourceLoader</PackageProjectUrl>
     <AssemblyName>EmbeddedResources</AssemblyName>
     <RootNamespace>EmbeddedResources</RootNamespace>
+    <PackageId>EmbeddedResourceLoader</PackageId>
   </PropertyGroup>
 
 </Project>
